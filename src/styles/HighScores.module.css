@@ -1,0 +1,35 @@
+/* HighScores.module.css */
+
+.highScoresContainer {
+    background: rgba(255, 255, 255, 0.5); /* Transparent background */
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    max-width: 600px;
+    margin: 10vh auto; /* Adjust vertical margin to move content a bit down */
+    text-align: center;
+  }
+  
+
+.highScoresHeader {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333; /* Adjust color as needed */
+}
+
+.highScoresList {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+.highScoreItem {
+    margin-bottom: 10px;
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle shadow for each item */
+    font-size: 1.2em;
+    margin: 10px 0;
+}

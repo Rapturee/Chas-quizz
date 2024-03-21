@@ -1,0 +1,132 @@
+/* Quiz.module.css */
+
+.quizContainer {
+    background-image: url('/beautiful.webp');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2vh;
+}
+
+.quizContentContainer, .questionBox {
+    max-width: 700px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.01); /* Increased transparency */
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.8); /* Enhanced shadow for depth */
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.questionBox {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.answersContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+}
+
+.answerButton {
+    padding: 15px 30px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #d8d8d8;
+    color: #333;
+    font-size: 1.2em;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.answerButton:hover {
+    transform: scale(1.05);
+    background-color: #c0c0c0;
+}
+
+.selected {
+    background-color: #4CAF50;
+}
+
+.checkAnswerButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.checkAnswerButton:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+.startQuizContainer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.gameOverContainer, .winContainer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.gameOverText, .winText {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.gameOverText {
+    color: red;
+}
+
+.winText {
+    color: #4CAF50;
+}
+
+.nameInput {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+    background-color: #fff;
+}
+
+.startQuizButton, .checkAnswerButton, .nextQuestionButton {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.startQuizButton:hover, .checkAnswerButton:hover, .nextQuestionButton:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+.enterUsernameText {
+    font-size: 2em; /* Large and prominent text */
+    margin-bottom: 20px;
+    color: #fff; /* Assuming a light color works well with your background */
+    text-align: center;
+  }

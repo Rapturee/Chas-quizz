@@ -1,0 +1,32 @@
+/* Navbar.module.css */
+.navbar {
+    background-color: #333;
+    padding: 0px;
+    display: flex;
+    justify-content: center; /* Changed this to center */
+    align-items: center; /* Vertically center items */
+    height: 50px;
+    margin-bottom: 0; /* Ensures no extra space below the navbar */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center; /* Vertically center items */
+}
+
+.navbar ul li {
+    margin: 0 20px; /* Add equal margin to left and right for each li */
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar ul li a:hover {
+    color: lightblue;
+}

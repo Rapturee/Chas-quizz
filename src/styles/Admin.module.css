@@ -1,0 +1,120 @@
+/* Admin.module.css */
+
+.adminContainer {
+  background-image: url('/matrix.webp'); /* New background image */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff; /* Light color for text */
+  /* Adding transparent box styles */
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  backdrop-filter: blur(15px); /* Blur effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Shadow for depth */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.adminHeader {
+  font-size: 2.5em;
+  margin: 20px 0;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between buttons */
+  margin-bottom: 20px;
+}
+
+.buttonBox {
+  padding: 12px 25px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.buttonBox:hover {
+  transform: scale(1.1);
+  background-color: #4CAF50; /* Slight growth and color change on hover */
+}
+
+.startQuizButton {
+  background-color: #4CAF50;
+}
+
+.startQuizButton:hover {
+  background-color: #45a049;
+}
+
+.formContainer, .questionContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  backdrop-filter: blur(5px); /* Blur effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* Shadow for depth */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.inputGroup {
+  margin-bottom: 10px;
+}
+
+.inputField {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  margin: 5px 0;
+}
+
+.submitButton, .saveButton, .cancelButton {
+  background-color: #5cb85c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submitButton:hover, .saveButton:hover {
+  background-color: #4cae4c;
+}
+
+.cancelButton {
+  background-color: #d9534f;
+}
+
+.cancelButton:hover {
+  background-color: #c9302c;
+}
+
+.errorMessage {
+  color: red;
+  margin: 10px 0;
+}
+
+.questionItem {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #010101;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* Shadow for depth */
+  color: #fff; /* Light text color for better readability */
+  font-size: 1.2em; /* Larger font size for questions */
+}

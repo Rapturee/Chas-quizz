@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "title": "What is the capital of France?",
+    "answers": [
+      { "id": 1, "text": "Paris", "correct": true },
+      { "id": 2, "text": "London", "correct": false },
+      { "id": 3, "text": "Berlin", "correct": false },
+      { "id": 4, "text": "Rome", "correct": false }
+    ]
+  }
+]
